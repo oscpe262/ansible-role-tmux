@@ -1,0 +1,4 @@
+## roles/ansible-role-tmux/handlers/main.yml
+# vim:ft=ansible:
+---
+...

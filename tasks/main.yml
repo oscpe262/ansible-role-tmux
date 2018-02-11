@@ -1,0 +1,20 @@
+## roles/ansible-role-tmux/tasks/main.yml
+# vim:ft=ansible:
+---
+- name: "Install tmux packages"
+  package:
+    name: '{{ item }}'
+    state: present
+  tags: tmux
+  with_items:
+    - tmux
+    - xsel
+    - xclip
+
+- name: "Tmux Config"
+  template:
+    src: tmux.conf.j2
+    dest: /etc/tmux.conf
+    mode: 0664
+  tags: tmux
+...
