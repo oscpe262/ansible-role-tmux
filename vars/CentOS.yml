@@ -1,5 +1,0 @@
-## roles/ansible-role-tmux/vars/CentOS.yml
-# vim:ft=yaml.ansible:
----
-pline_path: '/usr/lib/python3.4/site-packages/powerline/bindings'
-...
