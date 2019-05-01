@@ -3,11 +3,12 @@
 An Ansible role for setting up tmux.
 
 ## Requirements
-Only tested on Fedora 27, but might very well work for quite a few other distros. Feel free to provide feedback.
+Only tested on Fedora, but might very well work for quite a few other distros. Feel free to provide feedback.
 
 ## Role Variables
 | Variable		| Default		| Comments (type) |
 | :---			| :---			| :---		  |
+| `tmux_pline_path` | `/usr/share` | Might vary with different distros. If so, add in vars/<dist>.yml | 
 
 ## Dependencies
 

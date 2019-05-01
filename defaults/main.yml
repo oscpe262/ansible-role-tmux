@@ -1,4 +1,5 @@
 ## roles/ansible-role-tmux/defaults/main.yml
 # vim:ft=yaml.ansible:
 ---
+tmux_pline_path: /usr/share
 ...

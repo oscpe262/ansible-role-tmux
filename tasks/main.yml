@@ -3,13 +3,13 @@
 ---
 - name: "Install tmux packages"
   package:
-    name: '{{ item }}'
+    name:
+      - tmux
+      - xsel
+      - xclip
+      - tmux-powerline
     state: present
   tags: tmux
-  with_items:
-    - tmux
-    - xsel
-    - xclip
 
 - name: "Tmux Config"
   template:
